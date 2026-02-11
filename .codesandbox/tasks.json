@@ -1,11 +1,21 @@
 {
-  "$schema": "https://codesandbox.io/schemas/tasks.json",
-  "setupTasks": [{ "name": "Install dependencies", "command": "npm install" }],
+  // These tasks will run in order when initializing your CodeSandbox project.
+  "setupTasks": [
+    {
+      "name": "Install dependencies",
+      "command": "npm install"
+    }
+  ],
+
+  // These tasks can be run from CodeSandbox. Running one will open a log in the app.
   "tasks": {
     "server": {
       "name": "API Server",
       "command": "npm run dev --workspace=server",
-      "runAtStart": true
+      "runAtStart": true,
+      "preview": {
+        "port": 3001
+      }
     },
     "client": {
       "name": "React Dev Server",
