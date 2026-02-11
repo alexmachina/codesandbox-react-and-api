@@ -1,0 +1,25 @@
+/* ============================================================
+   Base styles — Tailwind v4 is available via utility classes in
+   JSX, or add your own CSS here. Both approaches work fine.
+   ============================================================ */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family:
+    system-ui,
+    -apple-system,
+    sans-serif;
+  max-width: 640px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  color: #1a1a1a;
+}
+
+h1 {
+  margin-bottom: 1rem;
+}

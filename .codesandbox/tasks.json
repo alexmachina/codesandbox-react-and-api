@@ -1,0 +1,19 @@
+{
+  "$schema": "https://codesandbox.io/schemas/tasks.json",
+  "setupTasks": [{ "name": "Install dependencies", "command": "npm install" }],
+  "tasks": {
+    "server": {
+      "name": "API Server",
+      "command": "npm run dev --workspace=server",
+      "runAtStart": true
+    },
+    "client": {
+      "name": "React Dev Server",
+      "command": "npm run dev --workspace=client",
+      "runAtStart": true,
+      "preview": {
+        "port": 5173
+      }
+    }
+  }
+}
